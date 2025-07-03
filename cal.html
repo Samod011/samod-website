@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <script>
+        let num1=parseFloat(prompt("enter first number:"));
+let num2=parseFloat(prompt("enter second number:"));
+let operation=prompt("enter operation(+,-,*,/,**):");
+
+let result;
+if (operation==="+") result=num1 + num2;
+else if (operation ==="-") result=num1-num2;
+else if (operation==="*") result=num1*num2;
+else if (operation==="/") result=num1/num2;
+else if (operation==="**") result=num1**num2;
+else result ="Invalid operation";
+
+console.log(result);
+alert("Your answer is: " + result);
+    </script>
+</body>
+</html>
