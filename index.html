@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- NAVBAR-->
+     <nav>
+        <div class="left">
+            <a href="/">Samod Adeyanju</a>
+        </div>
+        <div class="right">
+            <a href="#about">
+                <span>About</span>
+            <a href="#skills">
+                <span>Skills</span>
+            </a>
+            <a href="#tools">
+                <span>Tools</span>
+            </a>
+             <a href="#contact">
+                <span>Contact</span>
+        </div>
+     </nav>
+     <hr>
+     <main>
+        <!--SECTION 1;HERO-->
+        <section class="hero-section">
+            <div class="text">
+                <h2> Hey! Smith here. I trust you're good.</h2>
+            </div>
+            <div class="my-picture"><img src="eid.jpg" alt="my picture"style="border-radius:50%;width:500px;height: 500px;"> </div>
+
+        </section>
+        <!--SECTION 2;ABOUT-->
+        <section id="about" class="about-section">
+            <div><h2>About</h2>
+            <p> I'm Samod Adeyanju - nickname is Smith, just so you know. I'm currently a student of the department of mechanical in the great Federal University of Technology Akure.
+        I'm an online tutor who helps students preparing for UTME, WASSCE, NECO, GCE, POST-UTME, etc.
+        I got into tutoring when I enrolled for a tutorial in Lagos to prepare for UTME myself back in 2021. The tutorial was a very nice experience for me and got to start tutoring right from that tutorial.
+        The name of the tutorial is <u><b>'The Light Education Centre'.</b></u> Tutoring is actually one of the things that geared me to having the vision -<i>to revolutionise the education sector of Nigeria and even the world at large.</i>
+        Though I'm just a regular undergraduate now who came from mainland of Lagos -Alimosho, my hopes and dreams of shaping the world will not be lost in pursuit of bread. </p>
+            </div>
+        </section>
+         <!--SECTION 3;SKILLS-->
+        <section id="skills" class="skills-section">
+            <div><h2>Skills</h2>
+                <p>Both hard skills and soft skills are very important to individual as they represent the value of the person. Below are some of my skills, arranged in the order of hard skills to soft skills.</p>
+            </div>
+            <div class="cells">
+                <div class="cell">
+                    <span>Online Academic Tutoring</span>
+                </div>
+
+                <div class="cell">
+                <span>SOLIDWORKS modelling</span>
+                </div>
+
+                <div class="cell">
+                    <span>Web Development</span>
+                </div>
+
+                <div class="cell">
+                    <span>Communication</span>
+                </div>
+
+                <div class="cell">
+                    <span>Critical thinking</span>
+                </div>
+
+                <div class="cell">
+                    <span>Problem Solving</span>
+                </div>
+            </div>
+        </section>
+       
+        <!--SECTION 4;TOOLS-->
+        <section id="tools"  class="tools-section">
+            <div class="head">
+                <h2>Tools</h2>
+            </div>
+            <div class="extra">
+            <div class="calculator">
+                <a href="cal.html"><button>Calculator</button></a>
+            </div>
+            <div class="bmi">
+                <a href="bmi.html"><button>BMI Index</button></a>
+            </div>
+            </div>
+        </section>
+         <!--SECTION 5;CONTACT-->
+        <section id="contact" class="contact-section">
+            <h2>Contact</h2>
+            <div class="group">
+                <div class="text">
+                   Wanna get across to me! Easy. Fill the form by inputting your necessary info and a message that specify your reason for contacting me.
+                </div>
+
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+
+                    <label for="message">Message</label>
+                    <textarea id="message"></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+     </main>
+     <!-- Popup HTML -->
+<div class="popup" id="popup">
+  <div class="popup-content">
+    <span class="close" id="closeBtn">&times;</span>
+    <h2>Welcome!</h2>
+    <p>This is a personal webpage refrain from using the info provided in a wrong way.</p>
+  </div>
+</div>
+<script>
+  window.onload = function () {
+    // Show popup after 3 seconds
+    setTimeout(function () {
+      document.getElementById("popup").style.display = "flex";
+    }, 1000);
+  };
+
+  // Close the popup
+  document.getElementById("closeBtn").onclick = function () {
+    document.getElementById("popup").style.display = "none";
+  };
+</script>
+</body>
+</html>
